@@ -261,7 +261,7 @@ visualFolder.add(params, 'density', 100, maxParticles, 100).onChange(v => geomet
 visualFolder.add(params, 'speedMultiplier', 0.1, 5.0, 0.1).name('Speed Multiplier');
 visualFolder.add(params, 'speedOpacity', 0.1, 10.0, 0.1).name('Opacity Sensitivity');
 visualFolder.add(params, 'exponentialOpacity').name('Exponential Opacity');
-visualFolder.add(params, 'trailLength', 0.0, 0.99, 0.01).onChange(v => afterimagePass.uniforms['damp'].value = v);
+visualFolder.add(params, 'trailLength', 0.0, 0.99, 0.01).name('Contrail Length').onChange(v => afterimagePass.uniforms['damp'].value = v);
 visualFolder.add(params, 'avgLifespan', 0.5, 20.0, 0.5).name('Average Lifespan (s)');
 visualFolder.add(params, 'showAxes').name('Show White Axes').onChange(v => axesGroup.visible = v);
 visualFolder.add(params, 'showBoundaryBox').name('Show Boundary Box').onChange(v => boundaryBox.visible = v);
